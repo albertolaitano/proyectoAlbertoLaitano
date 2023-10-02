@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--colorFondo);
+}
+
+
+:root {
+    --colorPrincipal: rgb(219, 18, 18);
+    --colorSecundario: rgba(0, 0, 0, 0.852);
+    --colorFondo:rgb(234, 234, 234);
+}
+
+
+
+.container {
+    max-width: 100%;
+}
+
+
+/* ---------------HEADER----------------*/
+
+#redes{
+    background-color: var(--colorSecundario);
+    display: flex;
+    flex-direction: row;
+}
+
+.col-4 a i {
+    color: whitesmoke;
+    font-size: medium;
+    transition: transform 0.3s;
+}
+
+.col-4 a i:hover {
+    font-size: large;
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg {
+        flex-wrap: wrap;
+    }
+}
+
+.navbar {
+    background-color: var(--colorPrincipal)!important;
+}
+.container {
+    background: var(--colorPrincipal);
+}
+.navbar-brand  {
+    color: whitesmoke;
+    font-weight: bold;
+
+}
+
+
+
+
+.navbar-toggler {
+    color: rgb(245, 245, 245);
+    border-color: whitesmoke;
+}
+
+.navbar-nav {
+    --bs-nav-link-color: whitesmoke;
+}
+
+
+.nav-item :hover {
+    font-weight: bold;
+}
+
+.btn {
+    color: whitesmoke;
+    border-color: white;
+}
+
+.btn-outline-success {
+    --bs-btn-color: rgb(143, 9, 9);
+    --bs-btn-border-color: rgb(143, 9, 9);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgb(143, 9, 9);
+    --bs-btn-hover-border-color: whitesmoke;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgb(143, 9, 9);
+    --bs-btn-active-border-color: rgb(143, 9, 9);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: rgb(143, 9, 9);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: rgb(143, 9, 9);
+    --bs-gradient: none;    
+}
+
+
+.menuEnlaces :hover {
+    font-weight: bold;
+}
+
+
+.subTitulo h1 {
+    background-color: var(--colorPrincipal);
+    color: whitesmoke;
+    margin: 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 440%;
+}
+.subTitulo h2 {
+    background: var(--colorSecundario);
+    color: whitesmoke;
+    margin: 0;
+    text-align: center;
+}
+
+
+.menuEnlaces {
+    width: 100%;
+    background-color: var(--colorSecundario);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+.menuEnlaces a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+
+
+/* ---------------MAIN----------------*/
+
+
+
+
+main h2 {
+    background-color: var(--colorPrincipal);
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+
+main div {
+    background-color: white;
+    text-align: center;
+}
+main img {
+    width: 100%;
+}
+main a {
+    color: black;
+    text-decoration: none;
+}
+main p {
+    font-weight: bold;
+    font-size: 130%;    
+}
+.articulo :hover {
+    font-weight: bold;
+    color: var(--colorPrincipal);
+}
+
+button {
+    background-color: var(--colorPrincipal);
+    border-color: whitesmoke;
+    color: whitesmoke;
+    padding: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-bottom: 10px;
+}
+
+.boton :hover {
+    font-weight: bold;
+    background-color: rgb(143, 9, 9) ;
+}
+/* ---------------FOOTER----------------*/
+#pie {
+    max-width: 100%;
+    background-color: var(--colorSecundario);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pie a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer a :hover {
+    font-weight: bold;
+}
+
+footer li :hover {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/* ---------------CONTACTO----------------*/
+
+.formularioContacto {
+    margin: 10px;
+}
+
+
+
+
+/* ---------------UBICACION----------------*/
+
+.ubicacion {
+    background-color: var(--colorFondo);
+}
+.ubicacion h2 {
+    text-align: start;
+}
+.ubicacion h3 {
+    margin-left: 60%;
+    background-color: var(--colorPrincipal);
+    color: whitesmoke;
+}
+.ubicacion table {
+    margin: auto;
+}
+.ubicacion iframe {
+    max-width: 100%;
+}
+
+
+
+
+
+/* ---------------NOSOTROS----------------*/
+
+.parrafo {
+    font-size: medium;
+    font-weight: lighter;
+ }
+
+
+
+
+
+/* ---------------AYUDA----------------*/
+
+
+.ayuda h2 {
+    text-align: center;
+    margin: 1.5rem;
+    font-weight: bold;
+}
