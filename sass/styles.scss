@@ -1,0 +1,299 @@
+$colorPrincipal: rgb(219, 18, 18);
+$colorSecundario: rgba(0, 0, 0, 0.852);
+$colorFondo:rgb(234, 234, 234);
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $colorFondo;
+}
+
+
+
+
+.container {
+    max-width: 100%;
+}
+
+
+/* ---------------HEADER----------------*/
+
+#redes{
+    background-color: $colorSecundario;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.col-4 a i {
+    color: whitesmoke;
+    font-size: medium;
+    transition: transform 0.3s;
+    &:hover {
+        font-size: large;
+    }
+}
+
+
+
+@media (min-width: 992px){
+    .navbar-expand-lg {
+        flex-wrap: wrap;
+    }
+}
+
+.navbar {
+    background-color: $colorPrincipal!important;
+}
+.container {
+    background: $colorPrincipal;
+}
+
+.logo {
+    background-color: $colorPrincipal;
+    padding: 1rem;
+
+        a {
+            padding: 1rem;
+            color: whitesmoke;
+            font-size: 1.8rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            filter: drop-shadow(5px 5px 10px rgb(38, 0, 0));
+            transition: 0.3s;
+        
+            &:hover  {
+                font-size: xx-large;
+            } 
+        }         
+}   
+
+
+.navbar-toggler {
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+.navbar-nav {
+    --bs-nav-link-color: whitesmoke;
+}
+
+
+.nav-item :hover {
+    font-weight: bold;
+}
+
+.btn {
+    color: whitesmoke;
+    border-color: white;
+}
+
+.btn-outline-success {
+    --bs-btn-color: rgb(143, 9, 9);
+    --bs-btn-border-color: rgb(143, 9, 9);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgb(143, 9, 9);
+    --bs-btn-hover-border-color: whitesmoke;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgb(143, 9, 9);
+    --bs-btn-active-border-color: rgb(143, 9, 9);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: rgb(143, 9, 9);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: rgb(143, 9, 9);
+    --bs-gradient: none;    
+}
+
+
+.menuEnlaces {
+    width: 100%;
+    background-color: $colorSecundario;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    a {
+        color: whitesmoke;
+        text-decoration: none;
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+
+.subTitulo {
+    h1 {
+    background-color: $colorPrincipal;
+    color: whitesmoke;
+    margin: 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 340%;
+    }
+    h2 {
+        background: $colorSecundario;
+        color: whitesmoke;
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+        font-size: 100%;
+        font-weight: bolder;
+    }
+    h3 {
+        background: $colorPrincipal;
+        color: whitesmoke;
+        margin: 0;
+        text-align: center;
+        font-weight: bolder;
+    }
+}
+ 
+
+
+
+
+
+
+/* ---------------MAIN----------------*/
+
+
+
+
+main {
+    div {
+        background-color: white;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+    } 
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    p {
+        font-weight: bold;
+        font-size: 130%;    
+    }
+       
+}
+    
+
+.articulo :hover {
+    font-weight: bold;
+    color: $colorPrincipal;
+}
+
+button {
+    background-color: $colorPrincipal;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    padding: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-bottom: 10px;
+}
+
+.boton :hover {
+    font-weight: bold;
+    background-color: rgb(143, 9, 9) ;
+}
+/* ---------------FOOTER----------------*/
+#pie {
+    max-width: 100%;
+    background-color: $colorSecundario;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+}
+
+footer {
+    a :hover {
+        font-weight: bold;
+    }  
+    li :hover {
+        font-weight: bold;
+    }  
+} 
+
+
+
+
+
+
+
+
+
+/* ---------------CONTACTO----------------*/
+
+.formularioContacto {
+    margin: 10px;
+}
+
+
+
+
+/* ---------------UBICACION----------------*/
+
+.ubicacion {
+    background-color: $colorFondo;
+    h2 {      
+        text-align: start;
+    }
+    h1 {
+        margin-left: 60%;
+        background-color: $colorPrincipal;
+        color: whitesmoke;
+    }
+    table {
+        margin: auto;
+    }
+    iframe {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+/* ---------------NOSOTROS----------------*/
+
+.parrafo {
+    font-size: medium;
+    font-weight: lighter;
+ }
+
+
+
+
+
+/* ---------------AYUDA----------------*/
+
+
+.ayuda h2 {
+    text-align: center;
+    margin: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* ---------------MARCAS----------------*/
+
+
+.galeria {
+    display: flex;
+    overflow: hidden;
+    transition: 0.3s;
+    &:hover {
+        transform: scale(1.2); 
+        filter: saturate(200%);  
+    }
+}
+
