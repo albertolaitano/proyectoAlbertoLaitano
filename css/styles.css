@@ -24,6 +24,7 @@ body {
     background-color: var(--colorSecundario);
     display: flex;
     flex-direction: row;
+    
 }
 
 .col-4 a i {
@@ -51,14 +52,34 @@ body {
 .navbar-brand  {
     color: whitesmoke;
     font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
 
+.logo {
+    background-color: var(--colorPrincipal);
+    padding: 1rem;
+}
+.logo a {
+    padding: 1rem;
+    color: whitesmoke;
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    filter: drop-shadow(5px 5px 10px rgb(38, 0, 0));
+    transition: 0.3s;
+}    
+
+
+.logo :hover  {
+    font-size: xx-large;
+    
 }
 
 
 
-
 .navbar-toggler {
-    color: rgb(245, 245, 245);
+    color: whitesmoke;
     border-color: whitesmoke;
 }
 
@@ -255,4 +276,20 @@ footer li :hover {
     text-align: center;
     margin: 1.5rem;
     font-weight: bold;
+}
+
+
+/* ---------------MARCAS----------------*/
+
+
+.galeria {
+    display: flex;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.galeria :hover {
+    transform: scale(1.2); 
+    filter: saturate(200%);
+    
 }
