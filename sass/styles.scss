@@ -194,7 +194,9 @@ button {
     padding-left: 18px;
     padding-right: 18px;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
+
 
 .boton :hover {
     font-weight: bold;
@@ -232,7 +234,9 @@ footer {
 /* ---------------CONTACTO----------------*/
 
 .formularioContacto {
-    margin: 10px;
+    margin: 3rem;
+    text-align: center;
+
 }
 
 
@@ -242,10 +246,10 @@ footer {
 
 .ubicacion {
     background-color: $colorFondo;
-    h2 {      
+    h1 {      
         text-align: start;
     }
-    h1 {
+    h2 {
         margin-left: 60%;
         background-color: $colorPrincipal;
         color: whitesmoke;
@@ -266,6 +270,7 @@ footer {
 /* ---------------NOSOTROS----------------*/
 
 .parrafo {
+    background-color: $colorFondo;
     font-size: medium;
     font-weight: lighter;
  }
@@ -277,17 +282,21 @@ footer {
 /* ---------------AYUDA----------------*/
 
 
-.ayuda h2 {
+.ayuda h1 {
     text-align: center;
     margin: 1.5rem;
     font-weight: bold;
 }
 
 
+
+
+
 /* ---------------MARCAS----------------*/
 
 
 .galeria {
+    background-color: $colorFondo;
     display: flex;
     overflow: hidden;
     transition: 0.3s;
@@ -295,5 +304,10 @@ footer {
         transform: scale(1.2); 
         filter: saturate(200%);  
     }
+}
+
+.titulo {
+    background-color: $colorFondo;
+    margin: 2rem;
 }
 
