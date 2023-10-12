@@ -253,31 +253,83 @@ footer li :hover {
 
 /* line 252, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
 .ubicacion h2 {
-  margin-left: 60%;
   background-color: #db1212;
   color: whitesmoke;
 }
 
-/* line 257, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
-.ubicacion table {
-  margin: auto;
+/* line 259, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.local {
+  background-color: #eaeaea;
 }
 
-/* line 260, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
-.ubicacion iframe {
+/* line 261, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.local .tabla {
+  background-color: #eaeaea;
+}
+
+/* line 264, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.local .mapa {
+  background-color: #eaeaea;
+}
+
+/* line 267, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.local iframe {
   max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  /* line 274, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+  .local {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* line 278, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+  .tabla {
+    margin: 1rem;
+  }
+  /* line 281, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+  .mapa {
+    margin: 1rem;
+  }
 }
 
 /* ---------------NOSOTROS----------------*/
-/* line 272, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+/* line 292, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.nosotros {
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* line 297, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.nosotros img {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+/* line 302, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.nosotros img:hover {
+  transform: scale(1.1);
+  filter: saturate(150%);
+}
+
+/* line 309, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
 .parrafo {
   background-color: #eaeaea;
-  font-size: medium;
-  font-weight: lighter;
+}
+
+/* line 311, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.parrafo p {
+  font-weight: normal;
+  margin-top: 1rem;
 }
 
 /* ---------------AYUDA----------------*/
-/* line 285, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+/* line 324, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
 .ayuda h1 {
   text-align: center;
   margin: 1.5rem;
@@ -285,21 +337,29 @@ footer li :hover {
 }
 
 /* ---------------MARCAS----------------*/
-/* line 298, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+/* line 337, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
 .galeria {
-  background-color: #eaeaea;
+  background-color: white;
   display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* line 343, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.galeria img {
+  max-width: 100%;
+  max-height: 100%;
   overflow: hidden;
   transition: 0.3s;
 }
 
-/* line 303, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
-.galeria:hover {
-  transform: scale(1.2);
+/* line 349, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.galeria img:hover {
+  transform: scale(1.4);
   filter: saturate(200%);
 }
 
-/* line 309, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+/* line 356, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
 .titulo {
   background-color: #eaeaea;
   margin: 2rem;
