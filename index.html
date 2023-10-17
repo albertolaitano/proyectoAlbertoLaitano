@@ -6,7 +6,7 @@
     <meta name="description" content="Descubre la mejor selección de productos de ferretería, pinturería, electrodomésticos y bazar en nuestra tienda en línea. Encuentra herramientas de alta calidad, pinturas de colores vibrantes, electrodomésticos modernos y todo lo que necesitas para tu hogar. Compra ahora y mejora tu vida en casa!">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Casa Ruy</title>
 </head>
 <body>
@@ -14,12 +14,16 @@
     <header>
         <section class="container" id="redes">
             <div class="row">
-                <div class="col-4"><a href="https://www.instagram.com/casaruy/"><i class="bi bi-instagram"></i></a></div>
-                <div class="col-4"><a href="https://m.facebook.com/p/Casa-Ruy-100064864756439/"><i class="bi bi-facebook"></i></a></div>
-                <div class="col-4"><a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a></div>
+                <div class="col-4 iconos-redes"><a href="https://www.instagram.com/casaruy/" target="_blank"><i class="bi bi-instagram"></i></a></div>
+                <div class="col-4 iconos-redes"><a href="https://m.facebook.com/p/Casa-Ruy-100064864756439/" target="_blank"><i class="bi bi-facebook"></i></a></div>
+                <div class="col-4 iconos-redes"><a href="https://www.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a></div>
             </div>
         </section>
-        <div class="logo"><a href="../index.html">CASA RUY</a></div></div>
+        <div class="contenedor-logo">
+            <div class="logo"><a href="../index.html">CASA RUY</a></div>
+            <div class="btn-carrito"><button class="btn btn-outline-success"><i class="bi bi-cart"></i> Carrito</button></div>
+        </div>
+        
 
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -85,170 +89,208 @@
           </nav>
 
       <section>
-        <div class="menuEnlaces">
-            <a href="carpetasHTML/ubicacion.html">Ubicación</a>
-            <a href="carpetasHTML/contacto.html">Contacto</a>
-            <a href="carpetasHTML/nosotros.html">Nosotros</a>
-            <a href="">Novedades</a>
-            <a href="carpetasHTML/marcas.html">Marcas</a>
+        <div>
+            <div class="col menuEnlaces">
+                <div id="index" class="enlace"><a href="index.html">Inicio</a></div>
+                <div class="enlace"><a href="carpetasHTML/ubicacion.html">Ubicación</a></div>
+                <div class="enlace"><a href="carpetasHTML/contacto.html">Contacto</a></div>
+                <div class="enlace"><a href="carpetasHTML/nosotros.html">Nosotros</a></div>
+                <div class="enlace"><a href="carpetasHTML/productos.html">Productos</a></div>
+                <div class="enlace"><a href="carpetasHTML/marcas.html">Marcas</a></div>                 
+            </div>
         </div>
+        
       </section>
-
+      
     </header>
 
-    <section>
-        <div class="row">
-            <img src="imagenes/960x425-milwaukee-banner-1.jpg" alt="960x425-milwaukee-banner-1">
-        </div>
-      </section>
-
-
+    
     <main>
-        <div class="subTitulo">
-            <h1>CASA RUY</h1>
-        <div class="subTitulo">
-            <h2>FERRETERIA - PINTURERIA - BAZAR - ELECTRODOMESTICOS</h2>
-        </div>
-           
-            
-        
-        <div class="subTitulo">
-            <h3>Productos destacados</h3>
-        </div>
-
-        <section class="container">
-            <div class="row">
-    
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div>
-                        <a href=""><img src="imagenes/amoladora-milwaukee.webp" alt="amoladora-milwaukee"></a>
-                    </div>
-                    <div class="articulo">
-                        <a href="">AMOLADORA 5 FUEL 18V 4.0AH 2781-159 MILWAUKEE</a>
-                    </div>
-                    <div>
-                        <p>USD 815,00</p>
-                    </div> 
-                    <div class="boton">
-                        <button>Comprar</button>
-                    </div>               
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-        
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div>
-                        <a href=""><img src="imagenes/llave-de-impacto-milwaukee.jpg" alt="llave-de-impacto-milwaukee"></a>
-                    </div>
-                    <div class="articulo">
-                        <a href="">LLAVE DE IMPACTO 1/2 18V 3.0AH 2 BAT2663-259 MILWAUKEE</a>
-                    </div>
-                    <div>
-                        <p>USD 908,00</p>
-                    </div>  
-                    <div class="boton">
-                        <button>Comprar</button>
-                    </div>              
+                <div class="carousel-inner carrusel">
+                  <div class="carousel-item active">
+                    <img src="imagenes/banners/960x425-milwaukee-banner-1.jpg" class="d-block w-100" alt="milwaukee-banner">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/banners/banner-ingco2.jpg" class="d-block w-100" alt="ingco-baner2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/banners/banner-wadfow.jpg" class="d-block w-100" alt="wadfow-banner">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/banners/goldex-banner (1).jpg" class="d-block w-100" alt="goldex-banner">
+                  </div>
                 </div>
-        
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div>
-                        <a href=""><img src="imagenes/taladro-percutor-milwoukee-2-bat.jpg" alt="taladro-percutor-milwoukee-2-bat"></a>
-                    </div>
-                    <div class="articulo">
-                        <a href="">TALADRO PERCUTOR 1/2 18V 1.5AH 2 BAT PERC2607-259C MILWAUKEE</a>
-                    </div>
-                    <div>
-                        <p>USD 550,00</p>
-                    </div> 
-                    <div class="boton">
-                        <button>Comprar</button>
-                    </div>               
-                </div>
-        
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div>
-                        <a href=""><img src="imagenes/sierra-circular-milwoukee.webp" alt="sierra-circular-milwoukee"></a>
-                    </div>
-                    <div class="articulo">
-                        <a href="">SIERRA CIRCULAR 6 1/2 18V FUEL (SIN BAT/SIN CARG ) 2730-059</a>
-                    </div>
-                    <div>
-                        <p>USD 484,00</p>
-                    </div>  
-                    <div class="boton">
-                        <button>Comprar</button>
-                    </div>              
-                </div>
-    
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
-        <div class="subTitulo">
-            <h3>Novedades</h3>
-        </div>
-        <section class="container">
-            <div class="row">
 
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div>
-                        <a href=""><img src="imagenes/jgo-dados.jpg" alt="jgo-dados"></a>
+
+        <section>
+            <div class="subTitulo"><h3>Productos destacados</h3></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="articulo-completo">
+                            <div class="articulo-img">
+                                <a href=""><img src="../imagenes/productos/amoladora-milwaukee.webp" alt="amoladora-milwaukee"></a>
+                            </div>
+                            <div class="articulo">
+                                <a href="">AMOLADORA 5 FUEL 18V 4.0AH 2781-159 MILWAUKEE</a>
+                            </div>
+                            <div>
+                                <p>USD 815,00</p>
+                            </div> 
+                            <div class="boton">
+                                <button>Comprar</button>
+                            </div>
+                        </div>                                      
                     </div>
-                    <div class="articulo">
-                        <a href="">JUEGO DADOS TUBO 25 PZS LLAVE CRIQUE 1/2 METR. Y PULG. INGCO HKTS12251</a>
+            
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="articulo-completo">
+                            <div class="articulo-img">
+                                <a href=""><img src="../imagenes/productos/llave-de-impacto-milwaukee.jpg" alt="llave-de-impacto-milwaukee"></a>
+                            </div>
+                            <div class="articulo">
+                                <a href="">LLAVE DE IMPACTO 1/2 18V 3.0AH 2 BAT2663-259 MILWAUKEE</a>
+                            </div>
+                            <div>
+                                <p>USD 908,00</p>
+                            </div>  
+                            <div class="boton">
+                                <button>Comprar</button>
+                            </div>          
+                        </div>                         
                     </div>
-                    <div>
-                        <p>USD 125,00</p>
-                    </div> 
-                    <div class="boton">
-                        <button>Comprar</button>
+            
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="articulo-completo">
+                            <div class="articulo-img">
+                                <a href=""><img src="../imagenes/productos/taladro-percutor-milwoukee-2-bat.jpg" alt="taladro-percutor-milwoukee-2-bat"></a>
+                            </div>
+                            <div class="articulo">
+                                <a href="">TALADRO PERCUTOR 1/2 18V 1.5AH 2 BAT PERC2607-259C MILWAUKEE</a>
+                            </div>
+                            <div>
+                                <p>USD 550,00</p>
+                            </div> 
+                            <div class="boton">
+                                <button>Comprar</button>
+                            </div>        
+                        </div>                             
+                    </div>
+            
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="articulo-completo">
+                            <div class="articulo-img">
+                                <a href=""><img src="../imagenes/productos/sierra-circular-milwoukee.webp" alt="sierra-circular-milwoukee"></a>
+                            </div>
+                            <div class="articulo">
+                            <a href="">SIERRA CIRCULAR 6 1/2 18V FUEL (SIN BAT/SIN CARG ) 2730-059</a>
+                             </div>
+                             <div>
+                                <p>USD 484,00</p>
+                            </div>  
+                            <div class="boton">
+                                <button>Comprar</button>
+                            </div>         
+                        </div>
+                             
+                    </div>
+        
+                </div>
+            </div>   
+            
+        </section>
+        
+        <section>
+            <div class="subTitulo"><h3>Novedades</h3></div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="articulo-completo">
+                            <div class="articulo-img">
+                                <a href=""><img src="../imagenes/productos/jgo-dados.jpg" alt="jgo-dados"></a>
+                            </div>
+                            <div class="articulo">
+                                <a href="">JUEGO DADOS TUBO 25 PZS LLAVE CRIQUE 1/2" INGCO HKTS12251</a>
+                            </div>
+                            <div>
+                                <p>USD 125,00</p>
+                            </div> 
+                            <div class="boton">
+                                <button>Comprar</button>
+                            </div> 
+                        </div>
+                                      
+                    </div>
+            
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="articulo-completo">
+                            <div class="articulo-img">
+                                <a href=""><img src="../imagenes/productos/martillo-una.jpg" alt="martillo-una"></a>
+                            </div>
+                            <div class="articulo">
+                                <a href="">MARTILLO DE UÑA 450GR INGCO HCHD0166</a>
+                            </div>
+                            <div>
+                                <p>USD 11,00</p>
+                            </div>  
+                            <div class="boton">
+                                <button>Comprar</button>
+                            </div> 
+                        </div>                                   
+                    </div>
+            
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="articulo-completo">
+                            <div class="articulo-img">
+                                <a href=""><img src="../imagenes/productos//morza-banco.jpg" alt="morza-banco"></a>
+                            </div>
+                            <div class="articulo">
+                                <a href="">MORZA 4" INGCO BASE GIRATORIA CON YUNQUE INGCO HBV084</a>
+                            </div>
+                            <div>
+                                <p>USD 78,00</p>
+                            </div> 
+                            <div class="boton">
+                                <button>Comprar</button>
+                            </div>         
+                        </div>                            
+                    </div>
+            
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="articulo-completo">
+                            <div class="articulo-img">
+                                <a href=""><img src="../imagenes/productos/pinzas-set.jpg" alt="pinzas-set"></a>
+                            </div>
+                            <div class="articulo">
+                                <a href="">SET X 3 PINZAS COMBINADA PTA FINA INGCO HKPS08318</a>
+                            </div>
+                            <div>
+                                <p>USD 18,00</p>
+                            </div>  
+                            <div class="boton">
+                                <button>Comprar</button>
+                            </div>     
+                        </div>                               
                     </div>               
                 </div>
-        
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div>
-                        <a href=""><img src="imagenes/martillo-una.jpg" alt="martillo-una"></a>
-                    </div>
-                    <div class="articulo">
-                        <a href="">MARTILLO DE UÑA 450GR INGCO HCHD0166</a>
-                    </div>
-                    <div>
-                        <p>USD 11,00</p>
-                    </div>  
-                    <div class="boton">
-                        <button>Comprar</button>
-                    </div>              
-                </div>
-        
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div>
-                        <a href=""><img src="imagenes/morza-banco.jpg" alt="morza-banco"></a>
-                    </div>
-                    <div class="articulo">
-                        <a href="">MORZA 4" INGCO BASE GIRATORIA CON YUNQUE INGCO HBV084</a>
-                    </div>
-                    <div>
-                        <p>USD 78,00</p>
-                    </div> 
-                    <div class="boton">
-                        <button>Comprar</button>
-                    </div>               
-                </div>
-        
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div>
-                        <a href=""><img src="imagenes/pinzas-set.jpg" alt="pinzas-set"></a>
-                    </div>
-                    <div class="articulo">
-                        <a href="">SET X 3 PINZAS COMBINADA PTA FINA INGCO HKPS08318</a>
-                    </div>
-                    <div>
-                        <p>USD 18,00</p>
-                    </div>  
-                    <div class="boton">
-                        <button>Comprar</button>
-                    </div>              
-                </div>
-                
-            </div>
-
             </div>
         </section>
 
@@ -256,28 +298,25 @@
     </main>
 
 
-    <footer id="pie" class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <a href="carpetasHTML/ayuda.html"><h3>¿Cómo podemos ayudar?</h3></a>
-                <ul>
-                    <li><a href="carpetasHTML/ayuda.html#seccionPagos">Métodos de pagos</a></li>
-                    <li><a href="carpetasHTML/ayuda.html#seccionEnvios">Envios</a></li>
-                    <li><a href="carpetasHTML/ayuda.html#seccionGarantia">Garantía</a></li>
-                    <li><a href="carpetasHTML/ayuda.html#seccionDevoluciones">Devoluciones</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <h3>Información útil</h3>
+    <footer>
+        <div class="pie-de-pagina">
+            <div><a href="carpetasHTML/ayuda.html"><h3>¿Cómo podemos ayudar?</h3></a></div>
+            <div class="pie">
+                <div>
                     <ul>
-                        <li><a href="">Política de Privacidad</a></li>
-                        <li><a href="">Términos y Condiciones</a></li>
-                        <li><a href="">Contacto</a></li>
-                        <li>&copy; 2023 Fenevial SA. Todos los derechos reservados.</li>
+                        <li class="pie-font"><a href="carpetasHTML/ayuda.html#seccionPagos">Métodos de pagos</a></li>
+                        <li class="pie-font"><a href="carpetasHTML/ayuda.html#seccionEnvios">Envios</a></li>
+                        <li class="pie-font"><a href="carpetasHTML/ayuda.html#seccionGarantia">Garantía</a></li>
+                        <li class="pie-font"><a href="carpetasHTML/ayuda.html#seccionDevoluciones">Devoluciones</a></li>
                     </ul>
-            </div>
-
-        </div>
+                </div>     
+                <div class="row">
+                        <div class="col-4 iconos-redes iconos-redes-pie"><a href="https://www.instagram.com/casaruy/" target="_blank"><i class="bi bi-instagram"></i></a></div>
+                        <div class="col-4 iconos-redes iconos-redes-pie"><a href="https://m.facebook.com/p/Casa-Ruy-100064864756439/" target="_blank"><i class="bi bi-facebook"></i></a></div>
+                        <div class="col-4 iconos-redes iconos-redes-pie"><a href="https://www.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a></div>
+                </div> 
+            </div>       
+       </div>
     </footer>
  
     

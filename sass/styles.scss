@@ -1,6 +1,6 @@
 $colorPrincipal: rgb(219, 18, 18);
 $colorSecundario: rgba(0, 0, 0, 0.852);
-$colorFondo:rgb(234, 234, 234);
+$colorFondo:rgb(243, 243, 243);
 
 body {
     margin: 0;
@@ -29,10 +29,14 @@ body {
     color: whitesmoke;
     font-size: larger;
     transition: transform 0.3s;
-    &:hover {
-        font-size: x-large;
     }
-}
+
+.iconos-redes {
+    transition: o.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}    
 
 
 
@@ -45,29 +49,58 @@ body {
 .navbar {
     background-color: $colorPrincipal!important;
 }
-.container {
-    background: $colorPrincipal;
+
+
+
+.contenedor-logo {
+    height: 5rem;
+    background-color: $colorPrincipal;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        background-color: $colorPrincipal;
+        padding: 1rem;
+            a {
+                padding: 1rem;
+                color: whitesmoke;
+                font-size: 2rem;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                text-decoration: none;
+                filter: drop-shadow(5px 5px 10px rgb(38, 0, 0));
+                transition: 0.3s;
+            
+                &:hover  {
+                    font-size: 2.5rem;
+                } 
+            }         
+    } 
+    .btn-carrito {
+        margin-top: 2rem;
+        margin-right: 2rem;
+    }
 }
 
-.logo {
-    background-color: $colorPrincipal;
-    padding: 1rem;
-
-        a {
+@media (max-width: 480px) {
+    .contenedor-logo {
+        .logo {
+            a {
             padding: 1rem;
-            color: whitesmoke;
-            font-size: 2.5rem;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bold;
-            text-decoration: none;
-            filter: drop-shadow(5px 5px 10px rgb(38, 0, 0));
+            font-size: 1.5rem;
             transition: 0.3s;
-        
             &:hover  {
-                font-size: 3.5rem;
+                font-size: 1.8rem;
             } 
-        }         
-}   
+            }         
+        } 
+        .btn-carrito {
+            margin-top: 1rem;
+            margin-right: 2rem;
+        }
+    }
+      
+}
+  
 
 
 .navbar-toggler {
@@ -113,13 +146,50 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding: 5px;
+    .enlace {
+        text-align: center;
+        font-size: 1.2vw;
+        width: 12%;
+        transition: 0.3s;
+        &:hover {
+            transform: scale(1.2);
+            background-color: rgba(187, 185, 185, 0.247);
+        }
+    }
     a {
         color: whitesmoke;
         text-decoration: none;
-        &:hover {
-            font-weight: bold;
-        }
     }
+}
+
+
+#index {
+    transform: scale(1.2);
+    border-bottom: solid 2px whitesmoke;
+}
+
+#ubicacion {
+    transform: scale(1.2);
+    border-bottom: solid 2px whitesmoke;
+}
+
+#contacto {
+    transform: scale(1.2);
+    border-bottom: solid 2px whitesmoke;
+}
+
+#nosotros {
+    transform: scale(1.2);
+    border-bottom: solid 2px whitesmoke;
+}
+
+#productos {
+    transform: scale(1.2);
+    border-bottom: solid 2px whitesmoke;
+}
+#marcas {
+    transform: scale(1.2);
+    border-bottom: solid 2px whitesmoke;
 }
 
 
@@ -163,11 +233,8 @@ body {
 
 main {
     div {
-        background-color: white;
+        
         text-align: center;
-    }
-    img {
-        width: 100%;
     } 
     a {
         color: black;
@@ -179,7 +246,22 @@ main {
     }
        
 }
-    
+
+.articulo-completo {
+    background-color: white;
+    border: solid 1px rgb(178, 178, 178);
+    transition: 0.3s;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    &:hover {
+        transform: scale(1.1);
+    }
+    .articulo-img {
+        img {
+            max-width: 80%;
+        }
+    }
+}
 
 .articulo :hover {
     font-weight: bold;
@@ -202,30 +284,59 @@ button {
     font-weight: bold;
     background-color: rgb(143, 9, 9) ;
 }
-/* ---------------FOOTER----------------*/
-#pie {
+
+.carrusel {
     max-width: 100%;
-    background-color: $colorSecundario;
-    display: flex;
-    justify-content: space-evenly;
-    a {
-        text-decoration: none;
-        color: whitesmoke;
+    overflow: hidden;
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
-footer {
-    a :hover {
-        font-weight: bold;
+
+
+
+/* ---------------FOOTER----------------*/
+
+.pie-de-pagina {
+    background-color: $colorSecundario;
+    padding-top: 1rem;
+    text-align: center;
+    h3 {
+        transition: 0.3s;
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+    a {
+        color: whitesmoke;
+        text-decoration: none;
+    }    
+}
+
+.pie {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    .pie-font {
+        transition: 0.3s;
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
+
+.iconos-redes-pie {
+    font-size: 200%;
+}
+
+@media (max-width: 768px) {
+    .pie {
+        display: flex;
+        flex-direction: column;
     }  
-    li :hover {
-        font-weight: bold;
-    }  
-} 
-
-
-
-
+}
 
 
 
@@ -233,10 +344,9 @@ footer {
 
 /* ---------------CONTACTO----------------*/
 
-.formularioContacto {
-    margin: 3rem;
-    text-align: center;
 
+.formulario {
+    margin-top: 2rem;
 }
 
 
@@ -280,8 +390,12 @@ footer {
     }
     .mapa {
         margin: 1rem;
-    }   
+    }
+    
 }
+
+
+
 
 
 
@@ -321,10 +435,16 @@ footer {
 /* ---------------AYUDA----------------*/
 
 
-.ayuda h1 {
-    text-align: center;
-    margin: 1.5rem;
-    font-weight: bold;
+.ayuda {
+    margin: 2rem;
+    h1, h2, h3 {
+        text-align: center;
+        margin: 1.5rem;
+        font-weight: bold;
+    }
+    li {
+        margin-left: 3rem;
+    }
 }
 
 
@@ -339,7 +459,6 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    
     img {
         
         max-width: 100%;
