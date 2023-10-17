@@ -253,12 +253,13 @@ main {
     transition: 0.3s;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    height: 90%;
     &:hover {
         transform: scale(1.1);
     }
     .articulo-img {
         img {
-            max-width: 80%;
+            max-width: 70%;
         }
     }
 }
@@ -266,6 +267,7 @@ main {
 .articulo :hover {
     font-weight: bold;
     color: $colorPrincipal;
+    height: 100%;
 }
 
 button {
