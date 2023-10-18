@@ -161,6 +161,14 @@ body {
         text-decoration: none;
     }
 }
+@media (max-width: 480px){
+    .menuEnlaces {
+        a {
+            font-size: 3vw;
+        }
+        
+    }
+}
 
 
 #index {
