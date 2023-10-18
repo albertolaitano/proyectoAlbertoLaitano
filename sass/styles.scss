@@ -163,10 +163,14 @@ body {
 }
 @media (max-width: 480px){
     .menuEnlaces {
-        a {
+        .enlace {
+            width: 30%;
             font-size: 3vw;
-        }
-        
+        }  
+        &:hover {
+            transform: scale(1.1);
+            background-color: rgba(187, 185, 185, 0.247);
+        }      
     }
 }
 
@@ -225,6 +229,7 @@ body {
         margin: 0;
         text-align: center;
         font-weight: bolder;
+        filter: drop-shadow(5px 5px 10px rgb(38, 0, 0));
     }
 }
  
@@ -237,23 +242,62 @@ body {
 /* ---------------MAIN----------------*/
 
 
-
-
-main {
-    div {
-        
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    .titulo-principal {
+        background-color: $colorPrincipal;
+        color: whitesmoke;
         text-align: center;
+        width: 100%;
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            filter: drop-shadow(5px 5px 10px rgb(38, 0, 0));
+        }
     } 
-    a {
-        color: black;
-        text-decoration: none;
+    .ramos {
+        background-color: $colorSecundario;
+        color: whitesmoke;
+        text-align: center;
+        width: 100%;
     }
-    p {
-        font-weight: bold;
-        font-size: 130%;    
+    h2 {
+        padding: 0.5rem;
+        filter: drop-shadow(5px 5px 10px rgb(38, 0, 0));
     }
-       
 }
+
+@media (max-width: 480px) {
+    .contenedor {
+        .titulo-principal {
+            h1 {
+                font-size: 3rem;
+            }
+        } 
+        .ramos {
+            h2 {
+            font-size: 3vw;
+            }
+        }
+    }
+    }
+@media (max-width: 991px) {
+    .contenedor {
+        .titulo-principal {
+            h1 {
+                font-size: 3rem;
+            }
+        } 
+        .ramos {
+            h2 {
+            font-size: 3vw;
+            }
+        }
+    }
+    }
+    
+    
 
 .articulo-completo {
     background-color: white;
@@ -262,8 +306,17 @@ main {
     margin-top: 2rem;
     margin-bottom: 2rem;
     height: 90%;
+    text-align: center;
     &:hover {
         transform: scale(1.1);
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    p {
+        font-weight: bold;
+        font-size: 130%;    
     }
     .articulo-img {
         img {
@@ -307,7 +360,7 @@ button {
 
 .descripcion-articulo {
     background-color: white;
-    
+    text-align: center;
     h1 {
         margin-top: 2rem;
         font-size: 1.5rem;
@@ -324,6 +377,7 @@ button {
     img {
         margin-top: 2rem;
         max-width: 60%;
+        
     }
 }
 
@@ -508,5 +562,6 @@ button {
 .titulo {
     background-color: $colorFondo;
     margin: 2rem;
+    
 }
 
